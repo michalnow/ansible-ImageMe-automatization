@@ -23,3 +23,9 @@
         dest: "{{destination}}"
         clone: no
         update: yes
+    - name: "change local variable"
+      blockinfile:
+        path: /home/ec2-user/.bashrc
+        block: |
+          export SEARCH_ENGINE_ID=006879359584856769921:rplfy3clmho
+          export GOOGLE_CLOUD_API_KEY=AIzaSyDLLC1pqOxkWA8jUjM-Cfwbl_13Sh_2t98
